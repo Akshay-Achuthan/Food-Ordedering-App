@@ -1,10 +1,11 @@
 import NavBar from "./NavBar"
-import Image from "./ImageWrapper"
+import TitleCard from "../UI/TitleCard"
+
 const MainPage = () => {
   return (
     <div>
       <NavBar/>
-      <Image/>
+      <TitleCard/>
     </div>
   );
 }
