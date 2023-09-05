@@ -1,0 +1,60 @@
+/*
+Theme
+
+#fff
+#000
+#ccb940
+*/
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-heading{
+  font-family:cursive;
+  letter-spacing: 5px;
+  font-weight: 800;
+  margin: 0 0 0 70px;
+}
+
+.navbar-heading__style{
+  color: #fbdb0a;
+}
+
+.navbar-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #000;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 20px;
+  margin: 0 70px 0 0;
+}
+
+.navbar-button_text{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 8px;
+}
+
+.navbar-button__counter{
+padding: 5px 10px;
+color: #000;
+background-color: #fbdb0a;
+border-radius: 50%;
+}
+
+.navbar-button__icon{
+  margin: 0 10px 0 0 ;
+}
