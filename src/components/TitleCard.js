@@ -1,5 +1,5 @@
 import foodImg  from "../assets/food.jpg"
-import styles from "../UI/TitleCard.module.css"
+import styles from "./TitleCard.module.css"
 
 const TitleCard = () => {
   return (
