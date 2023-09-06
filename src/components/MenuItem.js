@@ -1,6 +1,21 @@
+import React, {useState} from "react";
 import styles from "./MenuItem.module.css"
 
 const MenuItem = (props) => {
+
+  let [incrementNum,setIncrementNum] = useState(0);
+ 
+  const addButtonHandler = () => {
+    setIncrementNum((preVal) => {
+      const convertedPreVal = Number(preVal);
+      return convertedPreVal+1;
+    })
+  }
+
+  const inputHandler = (event) => {
+    setIncrementNum(event.target.value);
+  }
+
   return (
     <ul className={styles['list']}>
       <li className={styles['list-styles']}>
@@ -12,9 +27,9 @@ const MenuItem = (props) => {
         <div className={styles['list-styles__seconddiv']}>
           <div className={styles['list-styles__quantity']}>
             <p>Quantity</p>
-            <input type="number"/>
+            <input onChange={inputHandler} value={incrementNum} type="number"/>
           </div> 
-          <button className={styles['list-styles__button']}>Add +</button>
+          <button onClick={addButtonHandler} className={styles['list-styles__button']}>Add +</button>
         </div>
       </li>
     </ul>

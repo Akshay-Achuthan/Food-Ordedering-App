@@ -11,8 +11,8 @@ const MainMenu = () => {
   return (
     <Card>
       {
-        MenuData.map((item) => (
-          <MenuItem title={item.title} description={item.descritpion} price={item.price}/>
+        MenuData.map((item,index) => (
+          <MenuItem key={index} title={item.title} description={item.descritpion} price={item.price}/>
         ))
       }
     </Card>

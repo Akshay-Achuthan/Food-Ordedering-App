@@ -18,7 +18,7 @@
   letter-spacing: 2px;
 }
 
-.list-styles__description{
+.list-styles__description,.list-styles__quantity{
   font-size: 16px;
   font-family: cursive;
 }
@@ -44,9 +44,18 @@
   align-items: center;
 }
 
-.list-styles__quantity input{
-  width: 35px;
-  margin-left: 10px;
+input[type="number"] {
+  width: 40px;
+  height: 15px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .list-styles__button{
@@ -58,4 +67,6 @@
   font-size: 16px;
   font-weight: 700;
   margin-top: 8px;
+  cursor: pointer;
 }
+
