@@ -1,7 +1,9 @@
-import React, {useState} from "react";
+import React, {useState,useContext} from "react";
 import styles from "./MenuItem.module.css"
+import QuantityTotal from "../store/quantity-total";
 
 const MenuItem = (props) => {
+  const ctx = useContext(QuantityTotal);
 
   let [incrementNum,setIncrementNum] = useState(0);
  
@@ -10,10 +12,14 @@ const MenuItem = (props) => {
       const convertedPreVal = Number(preVal);
       return convertedPreVal+1;
     })
+
+    ctx.handleQuantityChange(1);
   }
 
   const inputHandler = (event) => {
     setIncrementNum(event.target.value);
+
+    ctx.handleQuantityChange(Number(event.target.value));
   }
 
   return (
