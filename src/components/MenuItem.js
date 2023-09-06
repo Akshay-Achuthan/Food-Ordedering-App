@@ -13,6 +13,14 @@ const MenuItem = (props) => {
       return convertedPreVal+1;
     })
 
+    const addedData = {
+      title: props.title,
+      price: props.price,
+      quantity: incrementNum+1
+    };
+
+    const updatedCartData = [...ctx.cartData, addedData];
+    ctx.cartAddedData(updatedCartData);
     ctx.handleQuantityChange(1);
   }
 

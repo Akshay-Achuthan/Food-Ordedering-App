@@ -37,6 +37,7 @@ Theme
   padding: 12px 40px;
   border-radius: 20px;
   margin: 0 70px 0 0;
+  cursor: pointer;
 }
 
 .navbar-button_text{
