@@ -8,20 +8,27 @@ const MenuItem = (props) => {
   let [incrementNum,setIncrementNum] = useState(0);
  
   const addButtonHandler = () => {
+    const existingItemIndex = ctx.cartData.findIndex((item) => item.title === props.title);
+
+  if (existingItemIndex !== -1) {
+    const updatedCartData = [...ctx.cartData];
+    updatedCartData[existingItemIndex].quantity += 1;
+    ctx.cartAddedData(updatedCartData);
+  } else {
+    const addedData = {
+      title: props.title,
+      price: props.price,
+      quantity: 1, 
+    };
+    const updatedCartData = [...ctx.cartData, addedData];
+    ctx.cartAddedData(updatedCartData);
+  }
+  ctx.handleQuantityChange(1);
+
     setIncrementNum((preVal) => {
       const convertedPreVal = Number(preVal);
       return convertedPreVal+1;
     })
-
-    const addedData = {
-      title: props.title,
-      price: props.price,
-      quantity: incrementNum+1
-    };
-
-    const updatedCartData = [...ctx.cartData, addedData];
-    ctx.cartAddedData(updatedCartData);
-    ctx.handleQuantityChange(1);
   }
 
   const inputHandler = (event) => {
