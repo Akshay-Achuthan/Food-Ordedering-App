@@ -3,8 +3,8 @@ import MenuItem from "./MenuItem"
 
 const MenuData = [
   {title:"Dosa", descritpion:"Plani dosa  with chutney and sambar", price: 22.40},
-  {title:"Dosa", descritpion:"Plani dosa  with chutney and sambar", price: 2.21},
-  {title:"Dosa", descritpion:"Plani dosa  with chutney and sambar", price: 1.66}
+  {title:"IDli", descritpion:"Idli  with chutney and sambar", price: 2.21},
+  {title:"Momos", descritpion:"steamed balls with stuffed vegies", price: 1.66}
 ]
 
 const MainMenu = () => {
