@@ -47,6 +47,7 @@
 .list-styles__firstdiv{
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 
 .list-styles__firstdiv h3,p{
@@ -89,15 +90,15 @@
 }
 
 .list-styles__seconddiv{
-  width: 90px;
+  width: 85px;
   display: flex;
   justify-content: space-between;
 }
 
 .list_button__styles{
   border: none;
-  border-radius: 5px;
-  background-color: #000;
+  border-radius: 50px;
+  background-color: #ff0000;
   color: #fff;
   padding: 5px 15px;
   font-size: 18px;
@@ -105,3 +106,48 @@
   margin-top: 8px;
   cursor: pointer;
 }
+
+.cart-total{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.cart-total span{
+  font-family: cursive;
+  font-size: 20px;
+  color:#ff0000;
+  letter-spacing: 2px;
+}
+
+.cart-total b{
+  font-family: cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.modal-button__styles{
+  text-align: right;
+}
+
+.modal-button__styles button:first-child{
+  margin-right: 10px;
+  }
+
+.modal-button__styles button{
+  padding: 10px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
