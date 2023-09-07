@@ -50,10 +50,12 @@ Theme
 }
 
 .navbar-button__counter{
-padding: 5px 10px;
+padding: 5px 12px;
 color: #000;
 background-color: #fbdb0a;
 border-radius: 50%;
+font-weight: 800;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar-button__icon{
